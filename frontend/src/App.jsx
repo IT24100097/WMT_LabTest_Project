@@ -6,16 +6,16 @@ import EditItemPage from "./pages/EditItemPage.jsx";
 
 function App() {
   return (
-    <div className="container">
+    <>
       <Navbar />
-      <main>
+      <main className="container">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/add-item" element={<AddItemPage />} />
           <Route path="/edit-item/:id" element={<EditItemPage />} />
         </Routes>
       </main>
-    </div>
+    </>
   );
 }
 
